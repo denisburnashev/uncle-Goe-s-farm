@@ -218,9 +218,10 @@ def main():
       elif user_input == 'собрать яйца':
         tenth.collecting_eggs(float(input('Сколько часов вы хотите собирать яйца: ')))
     elif user_input == 'w':
+      both_weight = 0
       for animal in animals:
-        both_weight.append(animal.weight)
-      print(f'Общий вес составляет: {sum(both_weight)} кг.')
+        both_weight += animal.weight
+      print(f'Общий вес составляет: {both_weight} кг.')
     elif user_input == 't':
       name = ''
       max_weight = 0
